@@ -28,7 +28,8 @@ Take the output of the last two sections as input
 2. **Dense layer** (, 256)
 3. **Dense layer** (, 7612)
 
-## To use the trained run 
+## To use the trained model
+Run 
 ```bash
 python gui.py
 ```
