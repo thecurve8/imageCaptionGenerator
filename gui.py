@@ -77,7 +77,7 @@ def main():
         text=testModel(file_path, MAX_LENGTH_DESCRIPTION, model, tokenizer, xception_model)
         label.configure(foreground='#011638', text="Predicted caption: "+ text) 
                         
-    def show_classify_button(file_path):
+    def show_predict_button(file_path):
         """Displays the button used to clasify the image
         
             Parameters
@@ -86,7 +86,7 @@ def main():
                 The file location of the image to be classified
             """
 
-        classify_b=Button(top,text="Classify Image",command=lambda: predict_caption(file_path),padx=10,pady=5)
+        classify_b=Button(top,text="Predict caption",command=lambda: predict_caption(file_path),padx=10,pady=5)
         classify_b.configure(background='#364156', foreground='white',font=('arial',10,'bold'))
         classify_b.place(relx=0.79,rely=0.46)
         
@@ -102,7 +102,7 @@ def main():
             sign_image.configure(image=im)
             sign_image.image=im
             label.configure(text='')
-            show_classify_button(file_path)
+            show_predict_button(file_path)
         except:
             pass
     
@@ -128,7 +128,7 @@ def main():
             sign_image.configure(image=im)
             sign_image.image=im
             label.configure(text='')
-            show_classify_button(file_path)
+            show_predict_button(file_path)
         except:
             print("error while loading random image")
             pass
