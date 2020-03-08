@@ -9,7 +9,7 @@ of caption generators.
 
 This script requires that you have already trained a model.
 
-This script requires tkinter, PIL, tensorflow, numpy and pandas
+This script requires tkinter, PIL, tensorflow, numpy
 """
 
 import tkinter as tk
@@ -26,7 +26,6 @@ from settings import PATH_TOKENIZER, MAX_LENGTH_DESCRIPTION
 from os import listdir
 import numpy as np
 import os
-import pandas as pd
 
 def main():
     """Initiates and runs the GUI
